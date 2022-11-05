@@ -615,8 +615,9 @@ header {
 }
 
 .reviews__btn:hover {	
-	cursor: url('/images/Cursor.png') 4 1,
+	cursor: url('https://edu-partner.ru/images/Cursor.png') 4 1,
 	pointer;
+	
 }
 
 .reviews__btn a {
@@ -747,7 +748,7 @@ header {
 	margin-right: auto;
 }
 .tariffs-arrows-svg:hover{
-	cursor: url('/images/Cursor.png') 4 1,
+	cursor: url('https://edu-partner.ru/images/Cursor.png') 4 1,
 	pointer;
 }
 .tariffs-arrows-svg:hover path{
