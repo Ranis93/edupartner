@@ -157,7 +157,7 @@ header {
 	transform: translateY(70%);
 	opacity: 0;
 }
-.header__left-center-top .header__left-center-text::after,.header__left-sert-text::after{
+/* .header__left-center-top .header__left-center-text::after{
 	position: absolute;
 	content:'';
 	width: 80px;
@@ -165,7 +165,7 @@ header {
 	background-color: white;
 	left: 0;
 	top: -30px;
-}
+} */
 .header__left-center-title,.header__left-sert-title{
 margin-bottom: 30px;
 	width: 427px;
@@ -200,10 +200,10 @@ color: #FFFFFF;
 }
 .header__right-blocks{
     display: flex;
-    margin-right:80px;
     transition: 1s;
 	width: 610px;
 	justify-content: flex-end;
+	column-gap: 20px;
 }
 .header__right-block{
 	width: 180px;
@@ -222,7 +222,7 @@ color: #FFFFFF;
 .header__right-block:hover{
 	cursor: pointer;
 }
-.header__right-block::after{
+/* .header__right-block::after{
 	position: absolute;
 	content: '';
 	height: 3px;
@@ -230,7 +230,7 @@ color: #FFFFFF;
 	background-color: #FAFF00;
 	top: 150px;
 	left: 10px;
-}
+} */
 .header-bg{
 	position: absolute;
 	top: 0;
@@ -245,19 +245,19 @@ color: #FFFFFF;
 
 #header__right-platform{
 	background-image: url(https://eduexp.ru/wp-content/uploads/2021/09/notebook_1.png);
-	padding-left: 10px;
-	margin-right: 20px;
 }
 #header__right-center{
-	background-image: url(https://eduexp.ru/wp-content/uploads/2021/09/book.png);
-	padding-left: 10px;
-	margin-right: 20px;
+	background-image: url(https://edu-partner.ru/images/book.png);
+	
 }
 #header__right-sert{
 	background-image: url(https://eduexp.ru/wp-content/uploads/2021/09/sert_1.png);
 }
 #header__right-sert .header-bg{
 	background-image: url(https://edu-partner.ru/images/sert-header.jpg);
+}
+#header__right-main, #header__right-sert, #header__right-center, #header__right-platform{
+	background-size: auto;
 }
 .header__right-block:nth-child(4),.header__right-block:nth-child(5),.header__right-block:nth-child(6){ 
 	width: 0;
@@ -268,7 +268,7 @@ color: #FFFFFF;
 
 }
 #header__right-main{
-	background-image: url(https://eduexp.ru/wp-content/uploads/2021/09/edupartner.png);
+	background-image: url(https://edu-partner.ru/images/edupartner.png);
 }
 #header__right-main .header-bg{	
 	background: #1D1D1D;
@@ -312,14 +312,14 @@ color: #FFFFFF;
 	line-height: 31px;
 	margin-bottom: 30px;
 }
-.header__left-txt::before{
+/* .header__left-txt::before{
 	width: 80px;
 	height: 5px;
 	position: absolute;
 	content: '';
 	background-color: #FAFF00;
 	top: -30px;
-}
+} */
 .header__left-img{
 	margin-bottom: 55px;
 }
@@ -539,12 +539,14 @@ color: #FFFFFF;
 background-color:#0967A1;
 }
 .docs_right-img{
-	display: block;
+	display: none;
 	margin-left: 284px;
 	width: 371px;
 	margin-right: auto;
 }
-
+.active {
+	display: block;
+}
 .diplom{
 	background: #202020;
 	padding-bottom: 80px;
@@ -642,8 +644,8 @@ background-color:#0967A1;
 		line-height: 24px
 	}
 	.header__right-block{
-		width: 120px;
-		height: 187px;
+		width: 176px;
+		height: 280px;
 		padding-top: 95px;
 	}
 	.header__right-text{

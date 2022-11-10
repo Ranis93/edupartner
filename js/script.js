@@ -102,15 +102,12 @@ if(animItems.length > 0) {
 
 
 // карточки переключатель
-
+let i = 1;
 try {
   const cards = document.querySelectorAll('.tariffs-card');
   const right = document.querySelector('.tariffs-arrow-right');
   const left = document.querySelector('.tariffs-arrow-left');
-
-
-
-  let i = 1;
+  
   right.addEventListener('click', () => {
     i++
     removeClass()  
@@ -130,6 +127,38 @@ try {
       card.classList.remove('active', 'animated', 'pulse')  
     })
   }
+} catch(e) {}
+
+// карточки при наведении
+try {
+  const cards = document.querySelectorAll('.tariffs-card');
+  cards.forEach((card, id) => {
+    card.addEventListener('mouseover', () => {
+      cards.forEach(item=> {
+        item.classList.remove('active', 'animated', 'pulse')
+      })
+      card.classList.add('active', 'animated', 'pulse')
+      i = id
+    })
+  })
+} catch(e) {}
+
+// Лицензии, аккредитации, соглашения, благодарственные письма при наведении
+try {
+  const licenseBtns = document.querySelectorAll('.docs_left-btn');
+  const licenseImages = document.querySelectorAll('.docs_right-img');
+  let numm = 0;
+  licenseImages[numm].classList.add('active', 'animated', 'pulse');
+
+  licenseBtns.forEach((licenseBtn, num) => {
+    licenseBtn.addEventListener('mouseover', () => {
+      licenseImages.forEach(item=> {
+        item.classList.remove('active', 'animated', 'pulse')
+      })
+      numm = num
+      licenseImages[numm].classList.add('active', 'animated', 'pulse')      
+    })
+  })
 } catch(e) {}
 
 // SLIDER!!!!!!!!
