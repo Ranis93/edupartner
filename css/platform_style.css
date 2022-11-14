@@ -12,11 +12,10 @@ html{
 a{
 	text-decoration: none;
 }
-body{
-	
-font-family: 'Montserrat';
-font-style: normal;
-color: #FFFFFF;
+body{	
+	font-family: 'Montserrat';
+	font-style: normal;
+	color: #FFFFFF;
 }
 .container{
 	max-width: 1200px;
@@ -207,6 +206,7 @@ header {
     transition: 1s;
 	width: fit-content;
 	justify-content: flex-end;
+	flex-wrap: wrap;
 	column-gap: 20px;
 }
 
@@ -404,7 +404,7 @@ header {
 	background-size: cover;
 	background-position: center center;
 	/* height: 1185px; */
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 .opportunities-title{
 	font-weight: 700;
@@ -415,14 +415,14 @@ header {
 	padding-bottom: 65px;
 	position: relative;
 }
-.opportunities-title::before{
+/* .opportunities-title::before{
 	position: absolute;
 	content: '';
 	top: 80px;
 	width: 180px;
 	background-color: #1D1D1D;
 	height: 7px;
-}
+} */
 .opportunities-line{
 	height: 2px;
 	background-color: rgba(0, 0, 0, 0.25);
@@ -463,10 +463,8 @@ header {
 	margin-bottom: 80px;
 }
 
-
-
 .try{
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 
 
@@ -523,7 +521,6 @@ header {
 	background-color: #06080A;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 1520px;
 }
 .reviews-title {	
 	width: 480px;
@@ -577,13 +574,21 @@ header {
 	display: inline;
 	vertical-align: middle;
 }
-
+.review_circle-right, .review_circle-left {
+	max-width: 80px;
+}
+.review_yellow-arrow-right, .review_yellow-arrow-left {
+	max-width: 150px;
+}
 
 .review_yellow-arrow-right {
 	margin-left: -60px;
 }
 .review_circle-left {
 	margin-left: -40px;
+}
+.reviews-block{
+	padding-bottom: 50px;
 }
 
 .reviews_desc {
@@ -603,6 +608,9 @@ header {
 	border: 2px solid #FAFF00;
 	border-radius: 20px;	
 	padding: 20px 40px 20px 40px;
+}
+.reviews__inner{
+	padding-bottom: 150px;
 }
 
 .reviews__btn:hover {	
@@ -641,6 +649,7 @@ header {
 	background-size: cover;
 	height: 1080px;
 	margin-bottom: 20px;
+	margin-top: -1px;
 
 }
 .tariffs-title {
@@ -677,15 +686,14 @@ header {
 
 .tariffs-block{
 	display: flex;
-	align-items: flex-end;
+	align-items: stretch;
 	justify-content: center;
-	height: 620px;
+	min-height: 620px;
 }
 
 .tariffs-card {
 	width: 380px;
 	transition: 300ms;
-	min-height: 565px;
 	margin: 0 10px 0 10px;
 	padding: 45px 34px 39px 34px;
 	border-radius: 30px;
@@ -694,6 +702,7 @@ header {
 }
 
 .tariffs-card.active{
+	margin-top: -55px;
 	margin-bottom: 55px;
 	background: linear-gradient(337.52deg, rgba(244, 244, 244, 0.4606) -24.51%, rgba(244, 244, 244, 0) 119.94%);
 	opacity: 1;
@@ -764,8 +773,54 @@ header {
 		padding: 20px 20px;
 		width: 350px;
 	}
+	.platform{
+		margin-bottom: 140px;
+	}
 	.platform__left{
 		max-width: 393px;
+	}
+	.platform__right-title{
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.opportunities-title{
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.opportunities__left-text{
+		width: 580px;
+	}
+	.opportunities__right-text{
+		margin-left: 0;
+	}
+	.try{
+		margin-bottom: 80px;
+	}
+	.reviews-title {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.reviews_img, .reviews_img>img{
+		max-width: 372px!important;
+	}
+	.reviews-card {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.review_circle-right, .review_circle-left {
+		max-width: 58px;
+	}
+	.review_yellow-arrow-right, .review_yellow-arrow-left {
+		max-width: 90px;
+	}
+	.reviews_desc{
+		max-width: 370px;
+	}
+	.reviews-block{
+		padding-bottom: 0;
+	}
+	.reviews__inner{
+		padding-bottom: 130px;
 	}
 }
 
