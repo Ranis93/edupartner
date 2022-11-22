@@ -997,6 +997,7 @@ header {
 	.header__left-btn::after{
 		width: 32px;
 		right: 20px;
+		vertical-align: middle;
 	}
 	.header__right{
 		margin: 0;
@@ -1079,16 +1080,17 @@ header {
 		margin-bottom: 50px;
 	}
 	.try-btn{
-		max-width: 100%;
+		max-width: 97%;
 		font-size: 15px;
 		padding: 5px;
-		padding-left: 15px;
+		padding-left: 25px;
 		max-height: 39px;
 	}
 	.try-btn::after{
 		width: 22px;
 		font-size: 24px;
-		right: 22px;
+		right: 33px;
+		vertical-align: middle;
 	}
 	.reviews>.container {
 		padding: 0 20px;
