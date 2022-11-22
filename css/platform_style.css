@@ -1089,7 +1089,7 @@ header {
 	.try-btn::after{
 		width: 22px;
 		font-size: 24px;
-		right: 15px;
+		right: 5px;
 		top: 3px;
 	}
 	.reviews>.container {
