@@ -962,7 +962,7 @@ header {
 		gap: 51px;
 	}	
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
 	.header__right{
 		max-width: 320px;
 	}

@@ -895,7 +895,7 @@ background-color:#0967A1;
 		width: 100%;
 	}
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
 	.header{
 		max-height: 360px;
 	}

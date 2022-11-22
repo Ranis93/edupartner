@@ -477,7 +477,7 @@ line-height: 21px;
 		height: 280px;
 	}
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
 	.header__inner{
 		padding-top: 135px;
 		flex-wrap: wrap;
