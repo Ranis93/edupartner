@@ -481,6 +481,9 @@ line-height: 21px;
 
 /* потом удалить */
 @media (max-width: 480px) {
+	.header {
+		height: 100%;
+	}
 	.header__inner{
 		padding-top: 135px;
 		flex-wrap: wrap;
@@ -493,7 +496,8 @@ line-height: 21px;
 		max-width: 196px;
 	}
 	.header__right{
-		margin: 87px 0 114px 0;
+		margin: 87px 0 0 0;
+		padding-bottom: 114px;
 		max-width: 320px;
 	}
 	.header__right-blocks{
@@ -536,7 +540,8 @@ line-height: 21px;
 		max-width: 196px;
 	}
 	.header__right{
-		margin: 87px 0 114px 0;
+		margin: 87px 0 0 0;
+		padding-bottom: 114px;
 		max-width: 320px;
 	}
 	.header__right-blocks{
