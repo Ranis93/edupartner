@@ -964,6 +964,9 @@ header {
 }
 /* потом удалить */
 @media (max-width: 480px) {
+	html, body{
+		overflow-x: hidden;
+	}
 	.header__right{
 		max-width: 320px;
 	}
@@ -1166,6 +1169,9 @@ header {
 	}	
 }
 @media (max-width: 360px) {
+	html, body{
+		overflow-x: hidden;
+	}
 	.header__right{
 		max-width: 320px;
 	}
