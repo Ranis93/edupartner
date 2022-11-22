@@ -996,8 +996,8 @@ header {
 	}
 	.header__left-btn::after{
 		width: 32px;
-		right: 20px;
-		vertical-align: middle;
+		right: 25px;
+		top: 5px;
 	}
 	.header__right{
 		margin: 0;
@@ -1090,7 +1090,7 @@ header {
 		width: 22px;
 		font-size: 24px;
 		right: 33px;
-		vertical-align: middle;
+		top: 3px;
 	}
 	.reviews>.container {
 		padding: 0 20px;
