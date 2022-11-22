@@ -962,7 +962,208 @@ header {
 		gap: 51px;
 	}	
 }
+/* потом удалить */
 @media (max-width: 480px) {
+	.header__right{
+		max-width: 320px;
+	}
+	.header__slider{
+		max-width: 320px;
+	}
+	.header__list{
+		max-width: 320px;
+	}
+	.container{
+		padding: 0 20px;
+	}
+	.header__inner {
+		padding-top: 73px;
+		margin-bottom: 40px;
+		flex-wrap: wrap;
+	}
+	.header__left-img {
+		max-height: 270px;
+	}
+	.header__left-btn{
+		font-weight: 600;
+		font-size: 16px;
+		line-height:  130%;
+	
+		width: 320px;
+		height: 41px;
+		padding: 8px 10px 10px 20px;
+		margin-bottom: 60px;
+	}
+	.header__left-btn::after{
+		width: 32px;
+		right: 20px;
+	}
+	.header__right{
+		margin: 0;
+	}
+	.header__right-top{
+		display: none;
+	}
+	.header__right-block{
+		width: 150px;
+		height: 238px;
+		padding: 141px 10px 20px 10px;
+	}		
+	.header__right-text{
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 12px;
+		margin: 0 0 5px 0;
+	}
+	.header__right-txt{
+		margin: 0;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.platform {
+		margin-bottom: 0;
+	}
+	.platform__inner {
+		flex-wrap: wrap;
+		padding-bottom: 35px;
+	}
+	.platform__left {
+		padding: 0;
+		margin-top: 50px;
+	}
+	.platform__right{
+		padding-left: 0;
+	}
+	.platform__right-title{
+		margin: 40px 0 15px 0;
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.platform__right-text{
+		font-size: 18px;
+		line-height: 27px;
+		margin: 0;
+	}
+	.opportunities {
+		background-position: left center;
+		margin-bottom: 40px;
+	}
+	.opportunities-title{
+		padding: 50px 0 40px 0;
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.opportunities-block{
+		padding-top: 11px;
+		flex-wrap: wrap;
+	}
+	.opportunities__left{
+		max-width: 318px;
+		margin: 0;
+	}
+	.opportunities__left-text{
+		width: fit-content;
+		font-size: 24px;
+		line-height: 29px;
+	}
+	.opportunities__right{
+		margin-top: 15px;
+	}
+	.opportunities-comment{
+		width: 100%;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 50px;
+	}
+	.try{
+		margin-bottom: 50px;
+	}
+	.try-btn{
+		max-width: 90%;
+		font-size: 15px;
+		padding: 5px;
+		padding-left: 15px;
+		max-height: 39px;
+	}
+	.try-btn::after{
+		width: 22px;
+		font-size: 24px;
+		right: 22px;
+	}
+	.reviews>.container {
+		padding: 0 20px;
+	}
+	.reviews__inner{
+		padding-bottom: 100px;
+	}
+	.reviews-title{
+		padding: 50px 0 40px 0;
+		text-align: left!important;
+		width: 100%;
+	}
+	.reviews-card{
+		margin: 0;
+		flex-wrap: wrap;
+		row-gap: 30px;
+	}
+	.reviews_img, .reviews_img>img{
+		max-width: 320px;
+	}
+	.reviews_desc{
+		order: 2;
+		margin-bottom: 30px
+	}
+	.reviews__side-content{
+		order: 1;
+	}
+	.reviews__btn{
+		padding: 10px 20px;
+	}
+	.reviews__btn>.btn__img img{
+		width: 22px;
+	}
+	.reviews__btn .btn__text{
+		font-size: 15px;
+	}
+	.tariffs {
+		height: fit-content;
+	}
+	/* .tariffs>.container{
+		padding: 0 20px;
+	} */
+	.tariffs-block{
+		gap: 10px;
+		min-height: 10px;
+	}
+	.tariffs-card{
+		width: 269px;
+		padding: 45px 25px 0 25px;
+		margin-top: -55px;
+		margin-bottom: 55px;
+		margin-left: 0;
+		margin-right: 0;
+		background: linear-gradient(337.52deg, rgba(244, 244, 244, 0.4606) -24.51%, rgba(244, 244, 244, 0) 119.94%);
+		flex-shrink: 0;
+		opacity: 1;
+		box-sizing: content-box;
+	}
+	.tariffs-title{
+		padding: 0;
+		margin-bottom: 85px;
+		margin-top: 50px;
+		padding-top: 50px;
+		font-size: 30px;
+		line-height: 37px;
+		text-align: center;
+	}
+	.card_desc{
+		font-size: 18px;
+	}
+	.tariffs>.container{
+		padding: 0;
+	}	
+}
+@media (max-width: 360px) {
 	.header__right{
 		max-width: 320px;
 	}
@@ -1158,363 +1359,3 @@ header {
 		padding: 0;
 	}	
 }
-
-/* @media (max-width: 1200px) {
-	.header{
-		height: auto;
-	}
-	.header__left{
-		margin-left: 30px;
-	}
-	.header__left-title {
-		font-size: 56px;
-		line-height: 70px;
-		margin-top: 35px;
-	}
-	.header__left-text {
-		font-size: 35px;
-		line-height: 40px;
-	}
-	.header__left-image {
-		top: -194px;
-		left: 49px;}
-
-	.header__left-img {
-		width: 160px;
-		margin-bottom: 30px;
-	}
-	.header__left-txt::before,.header__left-center-text::after,.header__left-sert-text::after{
-		width: 40px;
-	}
-	.header__left-btn {
-		width: 330px;
-		height: 50px;
-		padding: 10px 10px 10px 20px;
-	}
-	.header__left-btn::after{
-		right: 5px;
-	}
-	.header__right-blocks{
-		width: 460px;
-	}
-	.header__right-title{
-		margin-left: 65px;
-	}
-	.header__right-title,.header__left-txt,.header__left-center-text,.header__left-sert-text {
-		font-size: 18px;
-		line-height: 24px
-	}
-	.header__right-block{
-		width: 176px;
-		height: 280px;
-		padding-top: 95px;
-	}
-	.header__right-text{
-		padding-right: 10px;
-		font-size: 8px;
-		line-height: 12px;
-		margin-bottom: 5px;
-	}
-	.header__right-txt {
-		font-size: 9px;
-		line-height: 12px;
-	}
-	.header__right-block::after{
-		top: 80px;
-	}
-	.platform__left {
-		width: 400px;
-	}
-	.platform__right-title,.opportunities-title,.header__left-center-title,.header__left-sert-title {
-		font-size: 30px;
-    	line-height: 40px;
-	}
-	.platform__right-text,.opportunities__right-text,.try-btn {
-		font-size: 16px;
-		line-height: 22px;
-	}
-	.opportunities-block{
-		justify-content: space-between;
-	}
-	.opportunities__left-text,.opportunities-comment,.reasons__left-text {
-		display: block;
-		max-width: 500px;
-		font-size: 24px;
-		line-height: 30px;
-	}
-	.opportunities__right-text,.reasons__right-text {
-		width: 400px;
-		display: block;
-	}
-	.platform,.opportunities,.try{
-		margin-bottom: 100px;
-	}
-	.try-btn{
-		width: 400px;
-	}
-	
-}
-
-@media (max-width: 1024px) {
-	.header{
-		height: 700px;
-	}
-	.header__right-block {
-		margin-right: 5px;	
-		width: 110px;
-	}
-	.header__right-blocks{
-		margin-right: 0;
-	}
-	.header__right-title, .header__left-txt,.header__left-center-text,.header__left-sert-text {
-		font-size: 16px;
-		line-height: 18px;
-		margin-bottom: 20px;
-	}
-	.header__left-title{
-		font-size: 38px;
-		line-height: 46px;
-	}
-	.header__left-sert-title {
-		margin-top: 20px;
-		margin-bottom: 30px;
-	}
-	.header__left-text {
-		font-size: 30px;
-		line-height: 36px;
-	}
-	.header__left-image {
-		top: -147px;
-		left: 44px;
-		width: 170px;
-	}
-	.header__right-top{
-		height: auto;
-	}
-	.header__right {
-		margin-bottom: 200px;
-	}
-	.header__right-title{
-		margin-left: 0;
-	}
-	.header__right-blocks{
-		width: 372px;
-	}
-	.platform__inner{
-		height: auto;
-		padding-top: 50px;
-		justify-content: space-around;		
-	}
-	.platform__right-title, .opportunities-title,.header__left-center-title,.header__left-sert-title {
-		font-size: 22px;
-		line-height: 30px;
-	}
-	.platform__right-text, .opportunities__right-text, .try-btn {
-		font-size: 12px;
-		line-height: 16px;
-	}
-	.platform__right,.license-right {
-		width: 300px;
-	}
-	.platform{
-		padding-bottom: 50px;
-		height: auto;
-	}
-	.platform, .opportunities,.try{
-		margin-bottom: 50px;
-	}
-	.opportunities__left-text, .opportunities-comment,.reasons__left-text {
-		max-width: 405px;
-		font-size: 16px;
-		line-height: 24px;
-	}
-	.opportunities__right-text, .reasons__right-text {
-		width: 320px;
-	}
-	.opportunities-title,.video-title{
-		padding-top: 50px;
-		padding-bottom: 30px;
-	}
-	.opportunities-title::before{
-		top: 40px;
-		width: 90px;
-		height: 5px;
-	}
-	.opportunities-block {
-		padding-top: 5px;
-	}
-	.opportunities__right-text,.reasons__right-text{
-		margin-bottom: 5px;
-	}
-	.opportunities-comment{
-		margin-bottom: 50px;
-	}
-	.opportunities{
-		height: auto;
-	}
-	.try-btn {
-		width: 312px;
-		height: 44px;
-		padding: 10px 19px
-	}		
-	.header__left-center-text,.header__left-sert-text{
-		max-width: 225px;
-	}
-	.header__left-center-title,.header__left-sert-title{
-		width: 350px;
-	}
-	.license,.reasons,.system,.sert_about{
-		padding: 100px 0;
-		height: auto;
-		margin-bottom: 50px;
-	}	
-}
-
-@media (max-width: 768px) {
-	.header__inner{
-		display: block;
-		padding-top: 50px;
-	}
-	.header__left,.header__left-edupartner{
-		height: auto;
-	}
-	.header__left-img{
-		width: 70px;
-		margin-bottom: 10px;
-	}
-	.header__left-edupartner{
-		height: 106px;
-	}
-	.header__left-center-top .header__left-center-text::after, .header__left-sert-text::after {
-		width: 30px;
-		height: 3px;
-		top: -20px;
-	}
-	.header__right-title, .header__left-txt,.header__left-center-text,.header__left-sert-text {
-		font-size: 12px;
-		line-height: 15px;
-		margin-bottom: 10px;
-	}
-	.header__left-btn {
-		font-size: 14px;
-		line-height: 18px;
-		width: 270px;
-		height: 36px;
-		padding: 5px 10px;
-	}
-	.header__left{
-		margin-left: 100px;
-	}
-	.header__right{
-		margin-bottom: 0;
-		padding-bottom: 50px;
-		width: 400px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 30px;
-	}
-	.header__right-blocks{
-		justify-content: flex-end;}
-	.header{
-		height: 500px;
-	}
-	.platform__left,.platform__right {
-		width: 250px;
-	}
-	.opportunities__left-text,.reasons__left-text  {
-		max-width: 325px;}
-	.opportunities-comment{
-		max-width: 325px;
-		margin-bottom: 25px;
-	}
-	.opportunities__right-text {
-		width: 220px;
-	}
-	.license,.system,.sert_about{
-		padding: 50px 0;
-	}
-}
-
-@media (max-width: 600px) {
-	.opportunities__left-text,.reasons__left-text,.opportunities-comment{
-		max-width: 215px;
-	}
-	.platform__left, .platform__right {
-		width: 205px;
-	}
-	.platform__right-title, .opportunities-title, .header__left-center-title, .header__left-sert-title {
-		font-size: 18px;
-		line-height: 24px;
-	}
-	.video-arrow-right, .video-arrow-left{
-		margin-top: 25px;
-	}
-	.video-video__mid, .video-video {
-		width: 200px;
-		height: 110px;
-	}	
-	.header__left{
-		margin-left: 30px;
-	}
-}
-
-
-
-@media (max-width: 480px) {
-	.header__left {
-		margin-left: 10px;	
-	}
-	.header__right-txt {
-		font-size: 8px;
-		line-height: 10px;
-	}
-	.header__right-text {
-		font-size: 6px;
-		line-height: 10px;
-	}
-	.header__right{
-		width: 100%;
-	}
-	.header__right-block {
-		width: 82px;
-		height: 150px;
-		padding-top: 65px;
-	}
-	.header__right-block::after {
-		top: 50px;
-		height: 2px;
-	}
-	.header__right-blocks {
-		width: 295px;
-	}
-	.platform__right-title, .opportunities-title, .header__left-center-title,.header__left-sert-title  {
-		font-size: 12px;
-		line-height: 16px;
-	}
-	.platform__left, .platform__right,.license-left,.license-right {
-		width: 140px;
-	}
-	.platform__right-text, .opportunities__right-text, .try-btn {
-		font-size: 10px;
-		line-height: 14px;
-	}
-	.opportunities__left-text, .opportunities-comment {
-		font-size: 10px;
-		line-height: 18px;
-		max-width: 130px;
-	}
-	.opportunities__right-text {
-		width: 155px;
-	}
-	.opportunities-title::before{
-		display: none;
-	}
-	.try-btn {
-		width: 270px;
-		height: 32px;
-		padding: 5px 10px;
-	}
-	.header__left-center-title,.header__left-sert-title {
-		width: 289px;
-	}
-} */

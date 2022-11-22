@@ -920,6 +920,8 @@ margin-bottom: 30px;
 		line-height: 22px;
 	}
 }
+
+/* потом удалить */
 @media (max-width: 480px) {
 	.header, #root{
 		height: 800px;
@@ -1093,495 +1095,176 @@ margin-bottom: 30px;
 		overflow-y: scroll
 	}
 }
-
-/* @media (max-width: 1200px) {
-	.header{
-		height: auto;
-
+@media (max-width: 360px) {
+	.header, #root{
+		height: 800px;
 	}
-	.header__left{
-		margin-left: 30px;
+	.container{
+		padding: 0 20px;
 	}
-	.header__left-title {
-		font-size: 56px;
-		line-height: 70px;
-		margin-top: 35px;
+	.header__inner{
+		padding-top: 73px;
+		flex-wrap: wrap;
 	}
-	.header__left-text {
-		font-size: 35px;
-		line-height: 40px;
+	.header__left-center-title{
+		margin-bottom: 35px;
+		font-size: 36px;
+		line-height: 44px;
 	}
-	.header__left-image {
-		top: -194px;
-		left: 49px;}
-
-	.header__left-img {
-		width: 160px;
-		margin-bottom: 30px;
+	.header__left-center-text{
+		font-size: 20px;
 	}
-	.header__left-txt::before,.header__left-center-text::after,.header__left-sert-text::after{
-		width: 40px;
-	}
-
-	.header__left-btn {
-		font-size: 18px;
-		line-height: 24px;
-		width: 330px;
-		height: 50px;
-		padding: 7px 16px;
+	.header__right{
+		margin-top: 60px;
+		margin-left: 0;
+		max-width: 320px;
 	}
 	.header__right-blocks{
-		width: 460px;
-	}
-	.header__right-title{
-		margin-left: 65px;
-	}
-	.header__right-title,.header__left-txt,.header__left-center-text,.header__left-sert-text {
-		font-size: 18px;
-		line-height: 24px
+		gap: 15px;
 	}
 	.header__right-block{
-		width: 176px;
-		height: 280px;
-		padding-top: 95px;
+		max-width: 150px;
+		max-height: 238px;
+	}
+	.header__right-block{
+		background-position: center 35%;
+		padding: 141px 10px 20px 10px;
+	}
+	.header__right-txt{
+		font-size: 16px;
+		line-height: 20px;
 	}
 	.header__right-text{
-		padding-right: 10px;
-		font-size: 8px;
+		font-size: 10px;
 		line-height: 12px;
-		margin-bottom: 5px;
 	}
-	.header__right-txt {
-		font-size: 9px;
-		line-height: 12px;}
-	.header__right-block::after{
-		top: 80px;
+	.header__slider{
+		max-width: 320px;
 	}
-
-	.license-left {
-		width: 400px;
-	}
-	.opportunities-title,.reasons-title,.license-title,.clients-title,.docs-title,.header__left-center-title,.header__left-sert-title {
-		font-size: 30px;
-    	line-height: 40px;
-	}
-
-	.opportunities__right-text,.license-text,.reasons__right-text,.docs_left-btn{
-		font-size: 16px;
-		line-height: 22px;
-	}
-	.opportunities-block{
-		justify-content: space-between;
-	}
-	.opportunities__left-text,.opportunities-comment,.reasons__left-text {
-		display: block;
-		max-width: 500px;
-		font-size: 24px;
-		line-height: 30px;
-	}
-	.reasons__right-text {
-		width: 400px;
-		display: block;
-	}
-	.opportunities{
-		margin-bottom: 100px;
-	}
-	
-	
-	.diplom-arrows-svg{
-		width: 23px;height: 45px;
-	}
-
-	.clients-title{
-		width: 245px;
-		margin-bottom: 50px;
-	}
-	.clients-title::after{
-		width: 100px;
-	}
-	.clients_inner{
-		justify-content: space-around;
-	}
-	.docs{
-		padding-top: 100px;
-		padding-bottom: 50px;
-	}
-	.docs_left-btn{
-		padding: 10px 20px;
-	}
-	.diplom-block{
-		width: 300px;
-	}
-}
-
-@media (max-width: 1024px) {
-	.header{
-		height: 700px;
-	}
-	.header__right-block {
-		margin-right: 5px;	
-		width: 110px;
-	}
-	.header__right-blocks{
-		margin-right: 0;
-	}
-	.header__right-title, .header__left-txt,.header__left-center-text,.header__left-sert-text {
-		font-size: 16px;
-		line-height: 18px;
-		margin-bottom: 20px;
-	}
-	.header__left-title{
-		font-size: 38px;
-		line-height: 46px;
-	}
-	.header__left-sert-title {
-		margin-top: 20px;
-		margin-bottom: 30px;
-	}
-	.header__left-text {
-		font-size: 30px;
-		line-height: 36px;
-	}
-	.header__left-image {
-		top: -147px;
-		left: 44px;
-		width: 170px;
-	}
-	.header__right-top{
-		height: auto;
-	}
-	.header__right {
-		margin-bottom: 200px;
-	}
-	.header__right-title{
-		margin-left: 0;
-	}
-	.header__right-blocks{
-		width: 372px;
-	}
-	.opportunities-title, .reasons-title,.license-title,.clients-title,.docs-title,.header__left-center-title,.header__left-sert-title {
-		font-size: 22px;
-		line-height: 30px;
-	}
-	.opportunities__right-text, .license-text,.reasons__right-text,.docs_left-btn {
-		font-size: 12px;
-		line-height: 16px;
-	}
-	.license-right {
-		width: 300px;
-	}
-	
-	.opportunities {
-		margin-bottom: 50px;
-	}
-	.opportunities__left-text, .opportunities-comment,.reasons__left-text {
-		max-width: 405px;
-		font-size: 16px;
-		line-height: 24px;
-	}
-	.opportunities__right-text, .reasons__right-text {
-		width: 320px;
-	}
-	.opportunities-title,.video-title{
+	.header__list{
+		max-width: 320px;
+	}	
+	.license{
 		padding-top: 50px;
-		padding-bottom: 30px;
+		background-position: right center;
+		min-height: 1058px;
+		height: fit-content;
+		margin: 0;
 	}
-	.opportunities-title::before{
-		top: 40px;
-		width: 90px;
-		height: 5px;
+	.license-inner {
+		flex-wrap: wrap;
+		padding-bottom: 37px;
 	}
-	.opportunities-block {
-		padding-top: 5px;
-	}
-	.opportunities__right-text,.reasons__right-text{
-		margin-bottom: 5px;
-	}
-	.opportunities-comment{
-		margin-bottom: 50px;
-	}
-	.opportunities{
-		height: auto;
-	}
-	
-	.header__left-center-text,.header__left-sert-text{
-		max-width: 225px;
-	}
-	.header__left-center-title,.header__left-sert-title{
-		width: 350px;
-	}
-
-	.license,.reasons,.system,.sert_about{
-		padding: 100px 0;
-		height: auto;
-		margin-bottom: 50px;
-	}
-	.license-inner{
-		justify-content: space-around;
+	.license-left{
+		max-width: 320px;
+		max-height: 449px;
+		padding-top: 0;
 	}
 	.license-right{
-		margin-top: 50px;
+		margin-top: 42px;
 	}
-
-	.reasons-title,.clients-title{
-		margin-bottom: 30px;
+	.license-title{
+		margin-bottom: 15px;
+		font-size: 30px;
+		line-height: 37px;
 	}
-	.reasons__right {
-		max-width: 40%;
+	.license-text{
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	.reasons{
+		padding-top: 50px;
+		padding-bottom: 166px;
+		margin-bottom: 0;
+		background-position: left center;
+	}
+	.reasons-title{
+		padding-bottom: 20px;
+		margin: 0;
+	}
+	.reasons-block{
+		flex-wrap: wrap;
+	}
+	.reasons__left-text{
+		font-size: 24px;
+		line-height: 29px;
 	}
 	.reasons__right-text{
 		width: 100%;
+		padding-top: 20px;
+		color: #FFFFFF;
 	}
-	.reasons__left-text{
-		max-width: 400px;
+	.reasons__right-link{
+		color: #FFFFFF;
 	}
-
+	.clients{
+		padding: 30px 0;
+	}
 	.clients-title{
-		width: 180px;
+		font-size: 30px;
+		line-height: 37px;
+		margin-bottom: 40px;
+		width: 100%;
 	}
-
-	.docs_inner{
-		justify-content: space-between;
+	.clients_inner{
+		gap: 15px;
 	}
-	.docs_right-img{
-		margin-left: 0;
+	.clients_block{		
+		margin: 0;
+	}
+	.clients_block, .clients_block img{
+		max-width: 150px;
+		max-height: 63px;
+	}
+	.docs{
+		padding: 80px 0;
 	}
 	.docs-title{
-		width: 325px;
+		margin: 0 0 37px 0;
+		font-size: 30px;
+		line-height: 37px;
 	}
-	.docs_right{
-		width: 50%;
-	}
-
-	.diplom-block{
-		width: 240px;
-	}
-	.diplom{
-		padding: 50px 0;
-	}
-	.diplom-arrows{
-		margin-top: 30px;
-	}
-	.diplom-inner {
-		height: 355px;
-	}
-}
-
-@media (max-width: 768px) {
-	.header__inner{
-		display: block;
-		padding-top: 50px;
-	}
-	.header__left,.header__left-edupartner{
-		height: auto;
-	}
-	.header__left-img{
-		width: 70px;
-		margin-bottom: 10px;
-	}
-	.header__left-edupartner{
-		height: 106px;
-	}
-	.header__left-center-top .header__left-center-text::after, .header__left-sert-text::after {
-		width: 30px;
-		height: 3px;
-		top: -20px;
-	}
-	.header__right-title, .header__left-txt,.header__left-center-text,.header__left-sert-text {
-		font-size: 12px;
-		line-height: 15px;
-		margin-bottom: 10px;
-	}
-	.header__left-btn {
-		font-size: 14px;
-		line-height: 18px;
-		width: 270px;
-		height: 36px;
-		padding: 5px 10px;
-	}
-	.header__left{
-		margin-left: 100px;
-	}
-	.header__right{
-		margin-bottom: 0;
-		padding-bottom: 50px;
-		width: 400px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 30px;
-	}
-	.header__right-blocks{
-		justify-content: flex-end;}
-	.header{
-		height: 500px;
-	}
-
-	.license-left,.license-right{
-		width: 250px;
-	}
-	.opportunities__left-text,.reasons__left-text  {
-		max-width: 325px;}
-	.opportunities-comment{
-		max-width: 325px;
-		margin-bottom: 25px;
-	}
-	.opportunities__right-text, .reasons__right-text {
-		width: 220px;
-	}
-	
-	.reasons__right {
-		max-width: 34%;
-	}
-	.reasons-line {
-		margin-bottom: 10px;
-		margin-top: 10px;
-	}
-	.license,.reasons,.clients,.docs,.system,.sert_about{
-		padding: 50px 0;
-	}
-	.clients_block{
-		margin-bottom: 15px;
-	}
-	.clients-image {
-		height: 60px;
-	}
-	.docs_right-img{
-		width: 100%;
-	}
-	.diplom-block {
-		width: 180px;
-	}
-	.reasons-title::after,.clients-title::after,.docs-title::after{
-		height: 4px;
-		width: 50px;
-		top: -15px;
-	}
-	.docs_left-btn {
-		padding: 5px 10px;
-	}
-	.diplom-inner {
-		height: 360px;
-	}
-}
-
-@media (max-width: 600px) {
-	.opportunities__left-text,.reasons__left-text,.opportunities-comment{
-		max-width: 215px;
-	}
-	.license-left,.license-right {
-		width: 205px;
-	}
-	.opportunities-title, .reasons-title, .license-title, .clients-title, .docs-title, .header__left-center-title, .header__left-sert-title {
-		font-size: 18px;
-		line-height: 24px;
-	}
-	
-	.diplom-arrows-svg {
-		width: 20px;
-		height: 30px;
-	}
-	.header__left{
-		margin-left: 30px;
-	}
-	.reasons__right {
-		max-width: 45%;
-	}
-	.license-right{
-		margin-top: 0;
-	}
-	.clients-title {
-		width: 147px;
-	}
-	.diplom-block {
-		width: 145px;
-	}
-	.diplom-arrows {
-		margin-top: 10px;
-	}
-	.diplom-inner {
-		height: 305px;
-	}
-}
-
-@media (max-width: 480px) {
-	.header__left {
-		margin-left: 10px;	
-	}
-	.header__right-txt {
-		font-size: 8px;
-		line-height: 10px;
-	}
-	.header__right-text {
-		font-size: 6px;
-		line-height: 10px;
-	}
-	.header__right{
-		width: 100%;
-	}
-	.header__right-block {
-		width: 82px;
-		height: 150px;
-		padding-top: 65px;
-	}
-	.header__right-block::after {
-		top: 50px;
-		height: 2px;
-	}
-	.header__right-blocks {
-		width: 295px;
-	}
-	.opportunities-title, .reasons-title,.license-title,.clients-title,.docs-title,.header__left-center-title,.header__left-sert-title  {
-		font-size: 12px;
-		line-height: 16px;
-	}
-	.license-left,.license-right {
-		width: 140px;
-	}
-	.platform__right-text, .opportunities__right-text, .license-text,.reasons__right-text,.docs_left-btn {
-		font-size: 10px;
-		line-height: 14px;
-	}
-	.opportunities__left-text, .opportunities-comment,.reasons__left-text {
-		font-size: 10px;
-		line-height: 18px;
-		max-width: 130px;
-	}
-	.opportunities__right-text, .reasons__right-text {
-		width: 155px;
-	}
-	.opportunities-title::before{
-		display: none;
-	}
-	
-	.header__left-center-title,.header__left-sert-title {
-		width: 289px;
-	}
-	.reasons-title{
-		width: 200px;
-	}
-	.clients-image {
-		height: 40px;
-	}
-	.clients-title {
-		width: 99px;
-	}
-	.diplom-block {
-		width: 100px;
-	}
-	.docs-title {
-		width: 300px;
+	.docs_inner{
+		flex-wrap: wrap;
 	}
 	.docs_left{
-		width: 30%;
+		margin-top: 0;
 	}
-	.docs_right{width: 60%;}
-	.diplom-inner {
-		height: 240px;
+	.docs_left-btn{
+		text-align: left;
+	}
+	.docs_right{
+		margin-top: 24px;
+	}
+	.docs_right-img{
+		margin: 0 auto;
+		max-width: 272px;
+		max-height: 383px;
+	}
+	.diplom{
+		padding: 80px 0;
+	}
+	.slider {
+		height: 100%;
+		width: 252px;
+	}
+	.slider-list{
+		height: 100%;
+		width: 252px;
+	}
+	.slide{
+		max-width: 252px;
+		max-height: 380px;
+		padding: 0;
+	}
+	.grid__link{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.grid{
+		max-width: 320px!important;
+	}
+	.footer>.container{
+		overflow-y: scroll
 	}
 }
-
-@media (max-width: 320px) {
-	.diplom-inner {
-		height: 160px;
-	}
-} */
