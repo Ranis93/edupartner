@@ -21,7 +21,7 @@ color: #FFFFFF;
 }
 .container{
 	max-width: 1200px;
-	padding: 0 10px;
+	padding: 0 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -91,21 +91,23 @@ header {
 	padding-top: 260px;
 }
 .header__left{
-	margin-top: 95px;
+	margin-top: 95px;	
+	width: auto;
+	white-space: nowrap;
 }
 .header__left-edupartner{
 	display: none;
 	transition: 1s;
 	transform: translateY(70%);
 	opacity: 0;
-	height: 150px;
-	padding-top: 20px;
+	max-height: 280px;
+	width: 100%;
 }
 .header__left-edupartner>img{
 	margin-top: 35px;
 	margin-left: 40px;
 }
-.header__left-title{
+/* .header__left-title{
 	font-weight: 500;
 	font-size: 80px;
 	line-height: 70px;
@@ -122,13 +124,27 @@ header {
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
-
+} */
+.header__left-text{
+	max-width: 169px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.header__left-text>img{
+	padding-bottom: 13px;
+	display: block;
+}
+.header__left-text>img:last-child{
+	padding-bottom: 0;
+}
+.header__left-planet{
+	display: inline-block;
+	margin-left: -50px;
+	z-index: -1;
+	vertical-align: middle;
 }
 .header__left-image{
-	position: relative;
-	top: -225px;
-	left: 96px;
-	z-index: -1;
+	max-width: 236px;
 }
 
 .header__left-center{	
@@ -212,14 +228,48 @@ color: #FFFFFF;
 	opacity: 0;
 }
 
+
+
+
+
+/* ========================================================================= */
+.header__slider {
+	max-width: 580px;
+	/* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+	user-select: none;
+	/* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+	touch-action: pan-y;
+  }
+  
+  /* Если где-то внутри слайдера будут изображения,
+  то нужно задать им pointer-events: none,
+  чтобы они не перетаскивались мышью */
+  
+  .header__slider img {
+	pointer-events: none;
+  }
+  
+  .header__list {
+	max-width: 580px;
+	overflow: hidden;
+  }
+  
+  .header__list.grab {
+	cursor: grab;
+  }
+  
+  .header__list.grabbing{
+	cursor: grabbing;
+  }
+/* ========================================================================= */
+
 .header__right-blocks{
     display: flex;
     transition: 1s;
-	width: 610px;
+	width: fit-content;
 	justify-content: flex-end;
 	column-gap: 20px;
 }
-
 .header__right-block{
 	width: 180px;
 	height: 280px;
@@ -373,8 +423,103 @@ line-height: 21px;
 	width: 0;
 }
 
-
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
+	.header__inner{
+		padding-top: 160px;
+	}
+	.header__right-block{
+		width: 176px;
+		height: 280px;
+	}
+	.header__left{
+		margin-top: 130px;
+	}
+	.header__left-image{
+		max-width: 199px;
+	}
+	.header__left-text{
+		max-width: 142px;
+	}
+	.header__left-text>img{
+		max-width: 100%;
+	}
+	.header__right{
+		max-width: 380px;
+		margin-left: 10px;
+	}
+	.header__slider{
+		max-width: 380px;
+	}
+	.header__list{
+		max-width: 380px;
+	}
+	.header__right-block{
+		width: 176px;
+		height: 280px;
+	}
+}
+@media (max-width: 768px) {
+	.header__inner{
+		padding-top: 165px;
+	}
+	.header__right{
+		max-width: 380px;
+		margin-left: 10px;
+	}
+	.header__slider{
+		max-width: 380px;
+	}
+	.header__list{
+		max-width: 380px;
+	}
+	.header__right-block{
+		width: 176px;
+		height: 280px;
+	}
+}
+@media (max-width: 360px) {
+	.header__inner{
+		padding-top: 135px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.header__left{
+		margin: 0;
+	}
+	.header__left-planet{
+		max-width: 196px;
+	}
+	.header__right{
+		margin: 87px 0 114px 0;
+		max-width: 320px;
+	}
+	.header__right-blocks{
+		gap: 15px;
+	}
+	.header__right-block{
+		max-width: 150px;
+		max-height: 238px;
+	}
+	.header__right-block{
+		background-position: center 35%;
+		padding: 141px 10px 20px 10px;
+	}
+	.header__right-txt{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.header__right-text{
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.header__slider{
+		max-width: 320px;
+	}
+	.header__list{
+		max-width: 320px;
+	}
+}
+/* @media (max-width: 1200px) {
 	.header{
 		height: auto;
 
@@ -573,7 +718,7 @@ line-height: 21px;
 
 
 @media (max-width: 480px) {
-	.header__left {
+	.header__left{
 		margin-left: 10px;
 	
 	}
@@ -608,7 +753,7 @@ line-height: 21px;
 		width: 289px;
 	}
 	
-}
+} */
 
 
 

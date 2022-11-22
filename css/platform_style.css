@@ -87,7 +87,7 @@ header {
 .header__inner{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 260px;
+	padding-top: 230px;
 }
 .header__left-edupartner{
 	display: none;
@@ -180,25 +180,44 @@ header {
 }
 
 .header__right{
-	margin-bottom: 215px;
+	margin-top: 125px;
 }
 
 .header__right-top{
 	height: 95px;
 	width: fit-content;
 }
-.header__right-title{
-	font-weight: 700;
-	font-size: 25px;
-	line-height: 30px;
-	text-transform: uppercase;
-	margin-bottom: 65px;
-	margin-left: 16px;	
-	display: none;
-	transition: 1s;
-	transform: translateY(200%);
-	opacity: 0;
-}
+
+/* ========================================================================= */
+.header__slider {
+	max-width: 580px;
+	/* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+	user-select: none;
+	/* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+	touch-action: pan-y;
+  }
+  
+  /* Если где-то внутри слайдера будут изображения,
+  то нужно задать им pointer-events: none,
+  чтобы они не перетаскивались мышью */
+  
+  .header__slider img {
+	pointer-events: none;
+  }
+  
+  .header__list {
+	max-width: 580px;
+	overflow: hidden;
+  }
+  
+  .header__list.grab {
+	cursor: grab;
+  }
+  
+  .header__list.grabbing{
+	cursor: grabbing;
+  }
+/* ========================================================================= */
 
 
 .header__right-blocks{
@@ -206,7 +225,6 @@ header {
     transition: 1s;
 	width: fit-content;
 	justify-content: flex-end;
-	flex-wrap: wrap;
 	column-gap: 20px;
 }
 
@@ -397,8 +415,7 @@ header {
 	color: #1D1D1D;
 }
 
-.opportunities{
-	
+.opportunities{	
 	background-image: url(https://eduexp.ru/wp-content/uploads/2021/09/yellow-white.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -648,9 +665,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 1080px;
-	margin-bottom: 20px;
 	margin-top: -1px;
-
 }
 .tariffs-title {
 	max-width: 1180px;
@@ -684,6 +699,11 @@ header {
 	background-size: 1478px 474px;
 }
 
+.tariffs__inner{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
 .tariffs-block{
 	display: flex;
 	align-items: stretch;
@@ -693,6 +713,7 @@ header {
 
 .tariffs-card {
 	width: 380px;
+	min-height: 565px;
 	transition: 300ms;
 	margin: 0 10px 0 10px;
 	padding: 45px 34px 39px 34px;
@@ -757,15 +778,46 @@ header {
 	stroke-opacity: 1;
 }
 
-
-
+.slider-one {
+	max-width: 1180px;
+	/* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+	user-select: none;
+	/* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+	touch-action: pan-y;
+  }
+  
+  /* Если где-то внутри слайдера будут изображения,
+  то нужно задать им pointer-events: none,
+  чтобы они не перетаскивались мышью */
+  
+  .slider-one img {
+	pointer-events: none;
+  }
+  
+  .slider-two {
+	max-width: 1180px;
+	overflow: hidden;
+	padding-top: 55px;
+  }
+  
+  .slider-two.grab {
+	cursor: grab;
+  }
+  
+  .slider-two.grabbing{
+	cursor: grabbing;
+  }
 
 @media (max-width: 1000px) {
+	.header__right{
+		margin-top: 66px;
+	}
 	.header__right-block{
 		width: 176px;
 		height: 280px;
 	}
 	.header__inner {
+		padding-top: 190px;
 		justify-content: flex-start;
 	}
 	
@@ -801,7 +853,7 @@ header {
 		line-height: 44px;
 	}
 	.reviews_img, .reviews_img>img{
-		max-width: 372px!important;
+		max-width: 372px;
 	}
 	.reviews-card {
 		margin-left: 20px;
@@ -822,6 +874,289 @@ header {
 	.reviews__inner{
 		padding-bottom: 130px;
 	}
+	.tariffs-title {
+		padding-left: 20px;
+	}
+	.tariffs-block{
+		justify-content: left;
+		align-items: flex-start;
+
+	}
+	.tariffs-card{
+		width: 372px;
+		height: 557px;
+		padding-left: 33px;
+		padding-right: 33px;
+		margin-top: -55px;
+		margin-bottom: 55px;
+		background: linear-gradient(337.52deg, rgba(244, 244, 244, 0.4606) -24.51%, rgba(244, 244, 244, 0) 119.94%);
+		opacity: 1;
+		flex-shrink: 0;
+	}
+	.slider-one{
+		margin: 0 auto;
+	}
+	.slider-two{
+		margin: 0 auto;
+		max-width: 95%;
+	}
+	.card_desc {
+		font-size: 19px;
+	}
+	.tariffs-arrows {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {	
+	.header__inner {
+		padding-top: 180px;
+	}
+	.header__right{
+		max-width: 380px;
+	}
+	.header__slider{
+		max-width: 380px;
+	}
+	.header__list{
+		max-width: 380px;
+	}
+	.platform__left{
+		max-width: 354px;
+	}
+	.platform__right{
+		padding-left: 54px;
+	}
+	.header__right-block{
+		width: 176px;
+		height: 280px;
+	}	
+	.opportunities-title{
+		max-width: 354px;
+		padding: 54px 0 65px 20px;
+	}
+	.opportunities{	
+		background-position: 57% center;
+	}
+	.opportunities__left{
+		margin-left: 10px;
+	}
+	.opportunities__left-text {
+		max-width: 374px;
+	}
+	.opportunities-comment{
+		max-width: 326px;
+	}
+	.reviews-title{
+		padding: 140px 20px 105px 0;
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.reviews_arrow{
+		display: none;
+	}
+	.reviews_img, .reviews_img>img{
+		max-width: 354px;
+	}
+	.reviews-card {
+		gap: 51px;
+	}	
+}
+@media (max-width: 360px) {
+	.header__right{
+		max-width: 320px;
+	}
+	.header__slider{
+		max-width: 320px;
+	}
+	.header__list{
+		max-width: 320px;
+	}
+	.container{
+		padding: 0 20px;
+	}
+	.header__inner {
+		padding-top: 73px;
+		margin-bottom: 40px;
+		flex-wrap: wrap;
+	}
+	.header__left-img {
+		max-height: 270px;
+	}
+	.header__left-btn{
+		font-weight: 600;
+		font-size: 16px;
+		line-height:  130%;
+	
+		width: 268px;
+		height: 41px;
+		padding: 8px 10px 10px 20px;
+		margin-bottom: 60px;
+	}
+	.header__left-btn::after{
+		width: 32px;
+		right: 20px;
+	}
+	.header__right{
+		margin: 0;
+	}
+	.header__right-top{
+		display: none;
+	}
+	.header__right-block{
+		width: 150px;
+		height: 238px;
+		padding: 141px 10px 20px 10px;
+	}		
+	.header__right-text{
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 12px;
+		margin: 0 0 5px 0;
+	}
+	.header__right-txt{
+		margin: 0;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.platform {
+		margin-bottom: 0;
+	}
+	.platform__inner {
+		flex-wrap: wrap;
+		padding-bottom: 35px;
+	}
+	.platform__left {
+		padding: 0;
+		margin-top: 50px;
+	}
+	.platform__right{
+		padding-left: 0;
+	}
+	.platform__right-title{
+		margin: 40px 0 15px 0;
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.platform__right-text{
+		font-size: 18px;
+		line-height: 27px;
+		margin: 0;
+	}
+	.opportunities {
+		background-position: left center;
+		margin-bottom: 40px;
+	}
+	.opportunities-title{
+		padding: 50px 0 40px 0;
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.opportunities-block{
+		padding-top: 11px;
+		flex-wrap: wrap;
+	}
+	.opportunities__left{
+		max-width: 318px;
+		margin: 0;
+	}
+	.opportunities__left-text{
+		width: fit-content;
+		font-size: 24px;
+		line-height: 29px;
+	}
+	.opportunities__right{
+		margin-top: 15px;
+	}
+	.opportunities-comment{
+		width: 100%;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 50px;
+	}
+	.try{
+		margin-bottom: 50px;
+	}
+	.try-btn{
+		max-width: 100%;
+		font-size: 15px;
+		padding: 5px;
+		max-height: 39px;
+	}
+	.try-btn::after{
+		width: 22px;
+		font-size: 24px;
+		right: 22px;
+	}
+	.reviews>.container {
+		padding: 0 20px;
+	}
+	.reviews__inner{
+		padding-bottom: 100px;
+	}
+	.reviews-title{
+		padding: 50px 0 40px 0;
+		text-align: left!important;
+		width: 100%;
+	}
+	.reviews-card{
+		margin: 0;
+		flex-wrap: wrap;
+		row-gap: 30px;
+	}
+	.reviews_img, .reviews_img>img{
+		max-width: 320px;
+	}
+	.reviews_desc{
+		order: 2;
+		margin-bottom: 30px
+	}
+	.reviews__side-content{
+		order: 1;
+	}
+	.reviews__btn{
+		padding: 10px 20px;
+	}
+	.reviews__btn>.btn__img img{
+		width: 22px;
+	}
+	.reviews__btn .btn__text{
+		font-size: 15px;
+	}
+	.tariffs {
+		height: fit-content;
+	}
+	/* .tariffs>.container{
+		padding: 0 20px;
+	} */
+	.tariffs-block{
+		gap: 10px;
+		min-height: 10px;
+	}
+	.tariffs-card{
+		width: 269px;
+		padding: 45px 25px 0 25px;
+		margin-top: -55px;
+		margin-bottom: 55px;
+		margin-left: 0;
+		margin-right: 0;
+		background: linear-gradient(337.52deg, rgba(244, 244, 244, 0.4606) -24.51%, rgba(244, 244, 244, 0) 119.94%);
+		flex-shrink: 0;
+		opacity: 1;
+		box-sizing: content-box;
+	}
+	.tariffs-title{
+		padding: 0;
+		margin-bottom: 85px;
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.card_desc{
+		font-size: 18px;
+	}
+	.tariffs>.container{
+		padding: 0;
+	}	
 }
 
 /* @media (max-width: 1200px) {
