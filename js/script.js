@@ -1,36 +1,3 @@
-// *********stars**********
-const params = {
-  amount: 200,
-  size: {
-    min: 1,
-    max: 5,
-    giant: 9
-  },
-  duration: {
-    min: 5,
-    max: 25,
-  }
-}
-const randomBetween = (a, b) => {
-  return (a + (Math.random() * (b - a)));
-}
-
-for (let i = 0; i < params.amount; i++) {
-  let star = $("<div></div>");
-  let size = Math.round(Math.random() * 10) === 0 ? params.size.giant : randomBetween(params.size.min, params.size.max);
-  star.css({
-    "width": size + "px",
-    "height": size + "px",
-    "left": randomBetween(0, 100) + "%",
-    "top": randomBetween(0, 100) + "%",
-    "box-shadow": "0 0 " + size + "px " + size / 2 + "px #043668",
-    "animation-duration": randomBetween(params.duration.min, params.duration.max) + "s"
-  });
-
-  $(".stars").append(star);
-}
-
-
 window.addEventListener('DOMContentLoaded', () => { 
     // click to projects cards
     document.querySelectorAll('.header__right-block').forEach((item, i) => {
@@ -38,16 +5,16 @@ window.addEventListener('DOMContentLoaded', () => {
             //event.preventDefault();
             switch(item.id) {
                 case 'header__right-platform':
-                    document.location.href = './platform.html';
+                    document.location.href = '../platform/';
                 break;              
                 case 'header__right-center':
-                    document.location.href = './license.html';
+                    document.location.href = '../license/';
                 break;
                 case 'header__right-sert':
-                    document.location.href = './certification.html';
+                    document.location.href = '../certification/';
                 break;            
                 default:
-                    document.location.href = './index.html';
+                    document.location.href = '../';
                 break;
               } 
             
@@ -160,52 +127,6 @@ try {
     })
   })
 } catch(e) {}
-
-// SLIDER благодарственные письма старая версия
-
-// try {
-//   const slides = document.querySelectorAll('.diplom-block');
-//   const parent = document.querySelector('.diplom-inner');
-//   const rightBtn = document.querySelector('.diplom-arrow-right');
-//   const leftBtn = document.querySelector('.diplom-arrow-left');
-//   let slider = [];
-//   let first = 0,
-//       second = 1,
-//       third = 2;
-//   rightBtn.addEventListener('click', () => {
-//     first++
-//     second++
-//     third++
-//     if(third >= slides.length) {
-//       first = 0;
-//       second = 1;
-//       third = 2;
-//     }
-//     removeClass()  
-//   })
-//   leftBtn.addEventListener('click', () => {
-//     first--
-//     second--
-//     third--
-//     if(first < 0) {
-//       first = slides.length-3;
-//       second = slides.length-2;
-//       third = slides.length-1;
-//     }
-//     removeClass()
-//   })
-//   function removeClass() {
-//     slides.forEach(slide => {
-//       slide.classList.add('diplom-block-shadow')    
-//     })
-//     slides[first].classList.remove('diplom-block-shadow')
-//     slides[second].classList.remove('diplom-block-shadow')
-//     slides[third].classList.remove('diplom-block-shadow')
-//   }
-// } catch (e) {}
-
-
-
 
 
 // All Drag-n-Drop SLIDERS 

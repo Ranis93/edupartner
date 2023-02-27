@@ -205,10 +205,18 @@ header {
 	pointer-events: none;
   }
   
-  .header__list {
-	max-width: 580px;
-	overflow: hidden;
-  }
+	.header__list {
+		padding: 20px 10px;
+		width: 620px;
+		height: 320px;
+		overflow: hidden;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.header__list::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
   
   .header__list.grab {
 	cursor: grab;
